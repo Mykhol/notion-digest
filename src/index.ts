@@ -1,7 +1,7 @@
 import * as dotenv from "dotenv";
-import { NotionService } from "./NotionService";
+import { NotionService } from "./module/Notion/NotionService";
 import { SendEmailCommand } from "@aws-sdk/client-ses";
-import { sesClient } from "./sesClient"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+import { sesClient } from "./module/AWS/SesService";
 
 dotenv.config();
 
